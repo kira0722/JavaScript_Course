@@ -37,3 +37,43 @@ const hobbie2 = 'pintar '
 const hobbie3 = 'colorear'
 const hobbies = 'mis hobies son: '.concat(hobbie1, hobbie2, hobbie3)
 console.log(hobbies);
+
+
+//-------------------------------------------------------------------------
+
+
+//caracteres de escape
+
+// const whatDoIDo = 'I'm Software'
+
+// C.E OPCION 1 = ESCAPE ALTERNATIVO
+
+const escapeAlternativo = "I'm Software Engineer "
+
+
+//C.E OPCION 2 = BARRA INVERTIDA
+
+const barraInvertida = 'I\'m Software Engineer'
+
+//C.E OPCION 3 = TEMPLATE LITERALS
+
+const escapeComillaInvertida = `I'm Software Engineer`
+
+//------------------------------------------------
+
+//Escritura de Strings largos
+
+/* lorem 
+impsum
+intu
+ea */
+
+const poema = 'lorem\n impsum\n intu\n ea \n'
+const poema2 = 'lorem \n\ impsun \n\ '
+const poema3 = `lorem
+impum
+shit`
+
+console.log(poema);
+console.log(poema2);
+console.log(poema3);
