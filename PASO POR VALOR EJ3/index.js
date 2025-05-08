@@ -29,3 +29,17 @@ let copiaPanes = panes
 panes.push('​🥟')
 console.log(panes, copiaPanes);
 
+let frutas = {
+    naranja: '🍊'
+}
+
+let vegetales = frutas
+vegetales.naranja = '🥦'
+console.log(vegetales);
+
+let ropa = {
+    blusa: '👚'
+}
+
+ropa.pantalon= '👖'
+console.log(ropa);
