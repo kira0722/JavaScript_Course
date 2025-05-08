@@ -7,7 +7,7 @@ function descuento(price, desc) {
 
 }
 
-//funcion de la clase
+//FUNCION DE LA CLASE
 // function calculate(number, disc) {
 //     const dis = (number * disc) / 100
 //     const priceDisc = number - dis
