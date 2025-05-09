@@ -1,21 +1,21 @@
-// const owner = 'lucy'
-// const address = 'cra 3 #1321 12'
+const owner = 'lucy'
+const address = 'cra 3 #1321 12'
 
-// function dogGeeting(owner, address) {
-//     console.log(`hi i'm ${this.dogName}, im live with ${owner} on ${address}`);
-// }
+function dogGeeting(owner, address) {
+    console.log(`hi i'm ${this.dogName}, im live with ${owner} on ${address}`);
+}
 
-// const newHouse = {
-//     dogName: 'cocoth'
-// }
+const newHouse = {
+    dogName: 'cocoth'
+}
 
-// dogGeeting.call(newHouse, owner, address)
+dogGeeting.call(newHouse, owner, address)
 
-// const needValues = [owner, address]
-// dogGeeting.apply(newHouse, needValues)
+const needValues = [owner, address]
+dogGeeting.apply(newHouse, needValues)
 
-// const bindingWith =  dogGeeting.bind(newHouse, owner, address)
-// bindingWith()
+const bindingWith =  dogGeeting.bind(newHouse, owner, address)
+bindingWith()
 
 const caricatura = {
     nombre: 'vaca y pollito'
