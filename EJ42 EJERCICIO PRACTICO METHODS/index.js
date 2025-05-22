@@ -24,3 +24,25 @@ console.log('Largest Transaction',LargestTransaction);
 
 const purcharseTransaction = transactions.filter(transactions => transactions.amount < 0)
 console.log('Purcharse Transaction: ',purcharseTransaction);
+
+//4. Find a Transaction by Description
+
+const specificTransaction = transactions.find(transactions => transactions.description === 'Online Purcharse')
+console.log('specific Transaction: ',specificTransaction);
+
+//5. find the index of a Transaction by Amount
+
+const indexTransactionAmount = transactions.findIndex(transactions => transactions.amount === -100)
+console.log('Index Transaction: ', indexTransactionAmount);
+
+//6. Update Transacion Descriptions
+
+transactions.forEach(transactions => {
+    if(transactions.amount < 0){
+        transactions.description = `Expense: ${transactions.description}`
+    } else {
+        transactions.description = `Income: ${transactions.description}`
+    }
+})
+
+console.log('update Transactions: ', transactions);
