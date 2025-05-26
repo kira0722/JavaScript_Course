@@ -31,7 +31,7 @@ const usersTimeline = [
   },
   {
     username: "Mariana",
-    timeline: "A mi me gusta mÃ¡s el cafÃ© que el tÃ©",
+    timeline: "A mi me gusta el cafe",
   },
   {
     username: "Andres",
@@ -48,12 +48,20 @@ function existUser(username, password) {
       usersDatabase[i].username === username &&
       usersDatabase[i].password === password
     ) {
-      console.log("is correct");
-      break;
-    } else {
-      console.log("it isnt correct");
+      return true;
     }
   }
+  return false;
 }
 
-existUser(username, password);
+
+function signIn(username, password) {
+    if(existUser(username, password)){
+        alert(`Bienvenido ${username}`)
+        console.log(usersTimeline);
+    }else{
+        alert("uuups, usuario o contraseña incorrectos")
+    }
+}
+
+signIn(username, password)
